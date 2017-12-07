@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hang Man</title>
+	<link rel="stylesheet" type="text/css" href="assetsHang/cssHang/reset.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assetsHang/cssHang/styleHang.css">
+	
+
+</head>
+<body>
+<!-- This section is the title of the game. It should never change. -->
+	<div class="jumbotron jumbotron-fluid ">
+  <div class="container ">
+    <h1 class="display-3 center">Movie Time</h1>
+    <p class="lead center">Test your movie knowlege with Hangman.</p>
+     <img src="assetsHang\imagesHang\Theater.jpg" alt="Movie theater seats" class=""> 
+     <!-- this image is supposed to be the background of the jumbotron but that seemed less important that coding the game funtion -->
+  </div>
+</div>
+
+<!-- This definds the acutal playing space -->
+
+<div class="container">
+  <div class="row justify-content-md-center">
+    <div class="col col-lg-4 ">
+      <p> There will be a picture here later</p>
+    </div>
+    <!-- <div class="col-md-auto">
+      Variable width content
+    </div> -->
+    <div class="col col-lg-4 gameBox">
+      <h3> Press any Key to begin</h3>
+        <div id = "welcome"></div>
+      	<div id = "newGame" class="wordDisplay"></div>
+        <div id = "guesses"> 
+            <p> letters already guessed 
+          <!-- I should have an append child in the javascript so this doesn't get overwritten -->
+            </p>
+        </div>
+      		
+      		
+
+		
+    </div>
+
+   </div>
+
+
+ 
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="assetsHang/javascriptHang/game.js"></script>
+</body>
+</html>

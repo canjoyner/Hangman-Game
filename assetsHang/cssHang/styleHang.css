@@ -1,0 +1,17 @@
+.theater{
+	background-image: ssetsHang\imagesHang\Theater.jpg
+}
+
+.center {
+	text-align: center;
+}
+
+.gameBox {
+	border-width: 2px;
+	border-color: blue;
+}
+
+
+.wordDisplay {
+	font-size: 300%;
+}
