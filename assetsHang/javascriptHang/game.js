@@ -12,19 +12,19 @@ var guess =[];
 var storeGuess = [];
 var chosenWord = [];
 var display = [];
-
+var test = "r";
 
 console.log(wins);
 console.log(wordBank)
 
 //click a key to begin
 
- document.onkeyup = function(){
+ document.onkeyup = function(){}
 console.log(current)
 //picks a word from the list and converts it to dashes
     var chosenWord  = wordBank[numRand];
     console.log(chosenWord)
-  
+  console.log("test")
       for (var i=0; i < chosenWord.length; i++) {
      storeTemp[i] = "-";   
 
@@ -36,45 +36,50 @@ console.log(current)
      	gameTime.innerHTML = current;
      
  }
-}
+
 console.log(storeTemp)
 console.log(current)
 console.log(chosenWord)
 // gathers key strokes. Code should have a loop to prevent users from guessing the same word twice
   onkeyup = function (event){ 
 
+
  {
     guess = event.key;
     storeGuess.push(guess);
 
-   console.log(storeGuess)
- attemps.innerHTML = storeGuess;
- }
-}
+   
+	for (var j=0; j < chosenWord.length; j++){
+  if (chosenWord.charAt(j) != test) {
 
-//this code should substitue the guess letter for the correct dash in the string
-//
-for (var j=0; j<chosenWord.length; j++){
-  if (chosenWord.charAt(j) != guess){
+  	// the  += notation here is adding to the entire string instead of 
+  	// keeping the string a set length
   display += current[j];}
    else {
    display += chosenWord[j];
    }   
-  console.log(choseWord + current);
-  console.log(j)
-
-guesses.innerHTML = storeGuess;
   
- 
+  console.log(display)
+
+attemps.innerHTML = storeGuess;
+gameTime.innerHTML = display;
+
+
+  
+
 
 };
-
+}
    
+// there are several things missing from this code
+//it doesn't keep score
+	// code should limit the number of guesses
+	//and keep track of how many successful games you completed
+// it doen't give a cool interaction once you guess the word
 
 
 
-
-
+}
 
 
  
