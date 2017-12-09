@@ -1,6 +1,10 @@
 .theater{
-	background-image: ssetsHang\imagesHang\Theater.jpg
+	/*background-image: url("../imagesHang/Theater.jpg");*/
+	/*opacity: 0.2;*/
+	font:black;
+	
 }
+	
 
 .center {
 	text-align: center;
@@ -14,4 +18,9 @@
 
 .wordDisplay {
 	font-size: 300%;
+}
+
+.winner {
+
+
 }
